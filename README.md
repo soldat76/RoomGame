@@ -5,3 +5,6 @@ Iterations of a self-project on text-based adventures
 Uploaded first interation:
 
 *RoomTest1.py*
+
+* Initial release
+* Added user input to close application.
