@@ -13,7 +13,7 @@ print("\nYou wake up in a room. There is a DOOR in the room.")
 x = 1
 while x == 1:
     userDecision = input("\nWhat will you do?: ")
-    userDecision = userDecision.lower()
+    userDecision = userDecision.lower() # Make sure that the input is lowercase.
     # Correct user decision should be broad enough.
     if "go to door" in userDecision or "unlock door" in userDecision or "open door" in userDecision:
         print("\n\n\nThe door is locked. There seems to be a KEY on the ground.")
@@ -30,7 +30,7 @@ while x == 1:
 # 2nd part starts here.        
 while x == 2:
     userDecision = input("\nWhat will you do?: ")
-    userDecision = userDecision.lower()
+    userDecision = userDecision.lower() # Lowercase user input
     if "pick up key" in userDecision or "get key" in userDecision:
         print("\n\n\nYou pick up the key on the ground.")
         x = 3
@@ -47,7 +47,7 @@ while x == 2:
 print("\nYou have the key now. It might just fit inside the DOOR.")
 while x == 3:
     userDecision = input("\nWhat will you do now?: ")
-    userDecision = userDecision.lower()
+    userDecision = userDecision.lower() # Lowercase user input
     if "unlock door" in userDecision or "open door" in userDecision:
         print("\n\n\nYou unlock the door and step outside the room. End of game.")
         x = 0
