@@ -49,8 +49,15 @@ while x == 3:
     userDecision = input("\nWhat will you do now?: ")
     userDecision = userDecision.lower()
     if "unlock door" in userDecision or "open door" in userDecision:
-        print("\nYou unlock the door and step outside the room. End of game.")
+        print("\n\n\nYou unlock the door and step outside the room. End of game.")
+        x = 0
         break
     else:
         print("\n\n\nI don't understand...")
         print("\nYou have the key to the DOOR now.")
+        
+while x == 0:
+    exitApplication = input("\nType 'close' to exit the application: ")
+    exitApplication = exitApplication.lower()
+    if "close" in exitApplication:
+        break
